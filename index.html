@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Minh Thiện | Software Development Intern Portfolio</title>
+    <meta name="description" content="Portfolio cá nhân của Nguyễn Minh Thiện - Thực tập sinh Công nghệ phần mềm. Sinh viên năm cuối tại Trường Đại học Công Thương TP. Hồ Chí Minh (HUIT).">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Background Gradients -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">MinhThien<span>.dev</span></a>
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link active">Giới thiệu</a>
+                <a href="#skills" class="nav-link">Kỹ năng</a>
+                <a href="#projects" class="nav-link">Dự án</a>
+                <a href="#education" class="nav-link">Học vấn</a>
+                <a href="#contact" class="nav-link">Liên hệ</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="CV_NguyenMinhThien.pdf" target="_blank" class="btn-primary resume-btn">Xem CV của tôi <i class="fa-solid fa-circle-arrow-down" style="margin-left: 6px;"></i></a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav">
+        <a href="#about" class="mobile-nav-link">Giới thiệu</a>
+        <a href="#skills" class="mobile-nav-link">Kỹ năng</a>
+        <a href="#projects" class="mobile-nav-link">Dự án</a>
+        <a href="#education" class="mobile-nav-link">Học vấn</a>
+        <a href="#contact" class="mobile-nav-link">Liên hệ</a>
+        <div class="mobile-nav-actions">
+            <a href="CV_NguyenMinhThien.pdf" target="_blank" class="btn-primary resume-btn-mobile">Xem CV của tôi <i class="fa-solid fa-circle-arrow-down" style="margin-left: 6px;"></i></a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <!-- Hero & About Section -->
+        <section id="about" class="hero-section">
+            <div class="section-container hero-grid">
+                <div class="hero-info">
+                    <span class="hero-badge animate-fade-in">Sẵn sàng thực tập</span>
+                    <h1 class="hero-title animate-fade-in animate-delay-1">Xin chào, mình là <span class="highlight">Nguyễn Minh Thiện</span></h1>
+                    <h2 class="hero-subtitle animate-fade-in animate-delay-1">Thực tập sinh công nghệ phần mềm</h2>
+                    <p class="hero-description animate-fade-in animate-delay-2">
+                        Em là sinh viên năm cuối ngành <strong>Công nghệ Thông tin</strong> tại <strong>Trường Đại học Công Thương TP. Hồ Chí Minh (HUIT)</strong>. 
+                        Em có kinh nghiệm thực hiện các dự án phát triển web và ứng dụng di động thông qua các đồ án học phần. Là người ham học hỏi, có khả năng thích nghi với công nghệ mới và luôn hướng đến việc tối ưu trải nghiệm người dùng, em mong muốn tìm kiếm cơ hội thực tập ở vị trí Lập trình viên để vận dụng kiến thức chuyên môn, tích lũy kinh nghiệm và đóng góp vào các dự án thực tế.
+                    </p>
+                    <div class="hero-buttons animate-fade-in animate-delay-2">
+                        <a href="#projects" class="btn-primary">Xem các dự án <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn-secondary">Liên hệ với mình</a>
+                    </div>
+                    <div class="hero-socials animate-fade-in animate-delay-3">
+                        <a href="https://github.com/MinhThien1st" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://facebook.com/MinhThien1st" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://zalo.me/0375774376" target="_blank" rel="noopener noreferrer" aria-label="Zalo">
+                            <svg viewBox="0 0 614.501 613.667" style="width: 20px; height: 20px; display: inline-block; vertical-align: middle;">
+                                <path fill="currentColor" d="M464.721,301.399c-13.984-0.014-23.707,11.478-23.944,28.312c-0.251,17.771,9.168,29.208,24.037,29.202   c14.287-0.007,23.799-11.095,24.01-27.995C489.028,313.536,479.127,301.399,464.721,301.399z" />
+                                <path fill="currentColor" d="M291.83,301.392c-14.473-0.316-24.578,11.603-24.604,29.024c-0.02,16.959,9.294,28.259,23.496,28.502   c15.072,0.251,24.592-10.87,24.539-28.707C315.214,313.318,305.769,301.696,291.83,301.392z" />
+                                <path fill="currentColor" d="M310.518,3.158C143.102,3.158,7.375,138.884,7.375,306.3s135.727,303.142,303.143,303.142   c167.415,0,303.143-135.727,303.143-303.142S477.933,3.158,310.518,3.158z M217.858,391.083   c-33.364,0.818-66.828,1.353-100.133-0.343c-21.326-1.095-27.652-18.647-14.248-36.583c21.55-28.826,43.886-57.065,65.792-85.621   c2.546-3.305,6.214-5.996,7.15-12.705c-16.609,0-32.784,0.04-48.958-0.013c-19.195-0.066-28.278-5.805-28.14-17.652   c0.132-11.768,9.175-17.329,28.397-17.348c25.159-0.026,50.324-0.06,75.476,0.026c9.637,0.033,19.604,0.105,25.304,9.789   c6.22,10.561,0.284,19.512-5.646,27.454c-21.26,28.497-43.015,56.624-64.559,84.902c-2.599,3.41-5.119,6.88-9.453,12.725   c23.424,0,44.123-0.053,64.816,0.026c8.674,0.026,16.662,1.873,19.941,11.267C237.892,379.329,231.368,390.752,217.858,391.083z    M350.854,330.211c0,13.417-0.093,26.841,0.039,40.265c0.073,7.599-2.599,13.647-9.512,17.084   c-7.296,3.642-14.71,3.028-20.304-2.968c-3.997-4.281-6.214-3.213-10.488-0.422c-17.955,11.728-39.908,9.96-56.597-3.866   c-29.928-24.789-30.026-74.803-0.211-99.776c16.194-13.562,39.592-15.462,56.709-4.143c3.951,2.619,6.201,4.815,10.396-0.053   c5.39-6.267,13.055-6.761,20.271-3.357c7.454,3.509,9.935,10.165,9.776,18.265C350.67,304.222,350.86,317.217,350.854,330.211z    M395.617,369.579c-0.118,12.837-6.398,19.783-17.196,19.908c-10.779,0.132-17.593-6.966-17.646-19.512   c-0.179-43.352-0.185-86.696,0.007-130.041c0.059-12.256,7.302-19.921,17.896-19.222c11.425,0.752,16.992,7.448,16.992,18.833   c0,22.104,0,44.216,0,66.327C395.677,327.105,395.828,348.345,395.617,369.579z M463.981,391.868   c-34.399-0.336-59.037-26.444-58.786-62.289c0.251-35.66,25.304-60.713,60.383-60.396c34.631,0.304,59.374,26.306,58.998,61.986   C524.207,366.492,498.534,392.205,463.981,391.868z" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="mailto:nmthien.dev@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-card-wrapper animate-fade-in animate-delay-2">
+                        <div class="profile-card">
+                            <div class="profile-img-container">
+                                <img src="avatar.jpg" alt="Nguyễn Minh Thiện" class="profile-avatar-img">
+                            </div>
+                            <div class="profile-card-details">
+                                <h3 class="profile-card-name">Nguyễn Minh Thiện</h3>
+                                <p class="profile-card-uni">Sinh viên HUIT (2023 - Hiện tại)</p>
+                                <div class="profile-card-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Q. Gò Vấp, TP. Hồ Chí Minh</span>
+                                    <span><i class="fa-solid fa-code"></i> C# • Java • Dart • JS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Kỹ năng chuyên môn</h2>
+                    <p class="section-subtitle">Công nghệ và công cụ mình sử dụng trong các dự án</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-card reveal">
+                        <div class="skills-card-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3>Ngôn ngữ lập trình</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-solid fa-hashtag" style="color: #178600;"></i> C#</span>
+                            <span class="skill-badge"><i class="fa-brands fa-java" style="color: #ea2d2e;"></i> Java</span>
+                            <span class="skill-badge"><i class="fa-solid fa-feather-pointed" style="color: #00b4ab;"></i> Dart</span>
+                            <span class="skill-badge"><i class="fa-solid fa-c" style="color: #a8b9cc;"></i> C</span>
+                        </div>
+                    </div>
+
+                    <!-- Web & Mobile -->
+                    <div class="skills-card reveal reveal-delay-1">
+                        <div class="skills-card-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Lập trình Web & Di động</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-brands fa-html5" style="color: #e34c26;"></i> HTML5</span>
+                            <span class="skill-badge"><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i> CSS3</span>
+                            <span class="skill-badge"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript</span>
+                            <span class="skill-badge"><i class="fa-brands fa-bootstrap" style="color: #563d7c;"></i> Bootstrap</span>
+                            <span class="skill-badge"><i class="fa-solid fa-mobile-screen-button" style="color: #02569b;"></i> Flutter Framework</span>
+                        </div>
+                    </div>
+
+                    <!-- DB & Tools -->
+                    <div class="skills-card reveal reveal-delay-2">
+                        <div class="skills-card-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Cơ sở dữ liệu & Công cụ</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-solid fa-database" style="color: #f29111;"></i> SQL Server</span>
+                            <span class="skill-badge"><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git / GitHub</span>
+                            <span class="skill-badge"><i class="fa-solid fa-paper-plane" style="color: #ff6c37;"></i> Postman</span>
+                            <span class="skill-badge"><i class="fa-solid fa-cubes" style="color: #f05032;"></i> SceneBuilder</span>
+                            <span class="skill-badge"><i class="fa-solid fa-fire" style="color: #ffca28;"></i> Firebase</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & AI -->
+                    <div class="skills-card reveal reveal-delay-3">
+                        <div class="skills-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Môi trường & Trợ lý AI</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-solid fa-laptop-code" style="color: #007acc;"></i> VS Code</span>
+                            <span class="skill-badge"><i class="fa-solid fa-code" style="color: #563d7c;"></i> Visual Studio</span>
+                            <span class="skill-badge"><i class="fa-solid fa-robot" style="color: #10b981;"></i> Antigravity</span>
+                            <span class="skill-badge"><i class="fa-solid fa-brain" style="color: #a855f7;"></i> OpenAI Codex</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Dự án nổi bật</h2>
+                    <p class="section-subtitle">Các sản phẩm thực tế được thực hiện thông qua đồ án và tự học</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Restaurant Management (Java/Spring Boot) -->
+                    <article class="project-card reveal">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-utensils project-placeholder-icon"></i>
+                            <div class="project-tech-overlays">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>SQL Server</span>
+                                <span>RESTful API</span>
+                                <span>JS Vanilla</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">Lập trình Full-stack</span>
+                            <h3 class="project-title">Website quản lý nhà hàng</h3>
+                            <p class="project-desc">
+                                Xây dựng backend bằng Spring Boot cung cấp RESTful API cho hệ thống quản lý nhà hàng. Phát triển giao diện frontend bằng HTML/CSS/JavaScript thuần, kết nối với backend qua API. Sử dụng SQL Server làm cơ sở dữ liệu.
+                            </p>
+                            <div class="project-details-list" style="font-size: 13px; color: var(--text-secondary); margin-bottom: 20px;">
+                                <div style="margin-bottom: 4px;"><strong>Môi trường:</strong> IntelliJ IDEA, SSMS 20, VS Code, Postman, SceneBuilder</div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/MinhThien1st/Restaurant-Management-System" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="project-link-btn primary-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Cafe Management (WinForms) -->
+                    <article class="project-card reveal reveal-delay-1">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-mug-hot project-placeholder-icon"></i>
+                            <div class="project-tech-overlays">
+                                <span>C#</span>
+                                <span>WinForms</span>
+                                <span>.NET Framework</span>
+                                <span>SQL Server</span>
+                                <span>ADO.NET</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">Lập trình Full-stack</span>
+                            <h3 class="project-title">Hệ thống quản lý quán cà phê</h3>
+                            <p class="project-desc">
+                                Xây dựng ứng dụng desktop quản lý đơn hàng, thanh toán và tồn kho. Thiết kế cơ sở dữ liệu SQL Server. Áp dụng các Trigger và Stored Procedure tối ưu để tự động kiểm tra dữ liệu và quản lý số lượng tồn kho một cách đồng bộ.
+                            </p>
+                            <div class="project-details-list" style="font-size: 13px; color: var(--text-secondary); margin-bottom: 20px;">
+                                <div style="margin-bottom: 4px;"><strong>Môi trường:</strong> Visual Studio 2022, SSMS 20</div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/MinhThien1st/QuanLyQuanCafe" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                                <span class="project-link-badge"><i class="fa-solid fa-desktop"></i> Desktop App</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Music App (Flutter) -->
+                    <article class="project-card reveal reveal-delay-2">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-music project-placeholder-icon"></i>
+                            <div class="project-tech-overlays">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Firebase</span>
+                                <span>RESTful API</span>
+                                <span>just_audio</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">Hỗ trợ Front-end & Back-end</span>
+                            <h3 class="project-title">Ứng dụng Nghe nhạc trên Di động</h3>
+                            <p class="project-desc">
+                                Tham gia thiết kế giao diện và triển khai các chức năng phát nhạc của ứng dụng. Tích hợp các RESTful API để lấy danh sách bài hát và nghệ sĩ. Sử dụng cơ sở dữ liệu thời gian thực Firebase để lưu trữ, quản lý danh sách yêu thích và đồng bộ dữ liệu.
+                            </p>
+                            <div class="project-details-list" style="font-size: 13px; color: var(--text-secondary); margin-bottom: 20px;">
+                                <div style="margin-bottom: 4px;"><strong>Môi trường:</strong> Android Studio, SSMS 20</div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/MinhThien1st/MyMusicApp" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                                <span class="project-link-badge"><i class="fa-solid fa-mobile-screen"></i> Mobile App</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Học vấn</h2>
+                    <p class="section-subtitle">Hành trình đào tạo và các môn học chuyên ngành</p>
+                </div>
+                
+                <div class="education-card reveal">
+                    <div class="education-header-block">
+                        <div class="education-title-group">
+                            <h3>Trường Đại học Công Thương Thành phố Hồ Chí Minh (HUIT)</h3>
+                            <p>Sinh viên ngành Công nghệ thông tin</p>
+                        </div>
+                        <span class="education-date-badge">2023 - Hiện tại</span>
+                    </div>
+                    <div class="education-content-block">
+                        <h4>Các môn học chuyên ngành tiêu biểu:</h4>
+                        <ul class="education-subjects-list">
+                            <li class="education-subject-item">Công nghệ .NET (Winform/C#)</li>
+                            <li class="education-subject-item">Cơ sở dữ liệu (SQL Server)</li>
+                            <li class="education-subject-item">Lập trình Web (HTML/CSS/JavaScript)</li>
+                            <li class="education-subject-item">Lập trình di động (Flutter)</li>
+                        </ul>
+                    </div>
+                    <div class="education-languages-block">
+                        <h4>Ngoại ngữ:</h4>
+                        <p class="education-languages-text"><i class="fa-solid fa-language"></i> Tiếng Anh: Đọc hiểu tài liệu kỹ thuật, giao tiếp cơ bản.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container contact-box reveal">
+                <div class="contact-info-panel">
+                    <h2>Kết nối với mình!</h2>
+                    <p>Mình hiện đang tích cực tìm kiếm cơ hội Thực tập sinh Công nghệ phần mềm. Hãy liên hệ với mình qua các kênh dưới đây nhé!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:nmthien.dev@gmail.com">nmthien.dev@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Điện thoại / Zalo</h4>
+                                <a href="https://zalo.me/0375774376" target="_blank" rel="noopener noreferrer">0375774376</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-brands fa-facebook"></i>
+                            <div>
+                                <h4>Facebook</h4>
+                                <a href="https://facebook.com/MinhThien1st" target="_blank" rel="noopener noreferrer">Nguyễn Minh Thiện</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Địa chỉ</h4>
+                                <p>Phường An Nhơn, Q. Gò Vấp, TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-panel">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Họ và Tên</label>
+                            <input type="text" id="name" required placeholder="Tên của bạn">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Lời nhắn</label>
+                            <textarea id="message" rows="5" required placeholder="Chào Thiện, mình muốn liên hệ về công việc..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary form-submit-btn">Gửi tin nhắn <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-socials">
+                <a href="https://github.com/MinhThien1st" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://facebook.com/MinhThien1st" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://zalo.me/0375774376" target="_blank" rel="noopener noreferrer" aria-label="Zalo">
+                    <svg viewBox="0 0 614.501 613.667" style="width: 18px; height: 18px; display: inline-block; vertical-align: middle;">
+                        <path fill="currentColor" d="M464.721,301.399c-13.984-0.014-23.707,11.478-23.944,28.312c-0.251,17.771,9.168,29.208,24.037,29.202   c14.287-0.007,23.799-11.095,24.01-27.995C489.028,313.536,479.127,301.399,464.721,301.399z" />
+                        <path fill="currentColor" d="M291.83,301.392c-14.473-0.316-24.578,11.603-24.604,29.024c-0.02,16.959,9.294,28.259,23.496,28.502   c15.072,0.251,24.592-10.87,24.539-28.707C315.214,313.318,305.769,301.696,291.83,301.392z" />
+                        <path fill="currentColor" d="M310.518,3.158C143.102,3.158,7.375,138.884,7.375,306.3s135.727,303.142,303.143,303.142   c167.415,0,303.143-135.727,303.143-303.142S477.933,3.158,310.518,3.158z M217.858,391.083   c-33.364,0.818-66.828,1.353-100.133-0.343c-21.326-1.095-27.652-18.647-14.248-36.583c21.55-28.826,43.886-57.065,65.792-85.621   c2.546-3.305,6.214-5.996,7.15-12.705c-16.609,0-32.784,0.04-48.958-0.013c-19.195-0.066-28.278-5.805-28.14-17.652   c0.132-11.768,9.175-17.329,28.397-17.348c25.159-0.026,50.324-0.06,75.476,0.026c9.637,0.033,19.604,0.105,25.304,9.789   c6.22,10.561,0.284,19.512-5.646,27.454c-21.26,28.497-43.015,56.624-64.559,84.902c-2.599,3.41-5.119,6.88-9.453,12.725   c23.424,0,44.123-0.053,64.816,0.026c8.674,0.026,16.662,1.873,19.941,11.267C237.892,379.329,231.368,390.752,217.858,391.083z    M350.854,330.211c0,13.417-0.093,26.841,0.039,40.265c0.073,7.599-2.599,13.647-9.512,17.084   c-7.296,3.642-14.71,3.028-20.304-2.968c-3.997-4.281-6.214-3.213-10.488-0.422c-17.955,11.728-39.908,9.96-56.597-3.866   c-29.928-24.789-30.026-74.803-0.211-99.776c16.194-13.562,39.592-15.462,56.709-4.143c3.951,2.619,6.201,4.815,10.396-0.053   c5.39-6.267,13.055-6.761,20.271-3.357c7.454,3.509,9.935,10.165,9.776,18.265C350.67,304.222,350.86,317.217,350.854,330.211z    M395.617,369.579c-0.118,12.837-6.398,19.783-17.196,19.908c-10.779,0.132-17.593-6.966-17.646-19.512   c-0.179-43.352-0.185-86.696,0.007-130.041c0.059-12.256,7.302-19.921,17.896-19.222c11.425,0.752,16.992,7.448,16.992,18.833   c0,22.104,0,44.216,0,66.327C395.677,327.105,395.828,348.345,395.617,369.579z M463.981,391.868   c-34.399-0.336-59.037-26.444-58.786-62.289c0.251-35.66,25.304-60.713,60.383-60.396c34.631,0.304,59.374,26.306,58.998,61.986   C524.207,366.492,498.534,392.205,463.981,391.868z" fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="mailto:nmthien.dev@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
